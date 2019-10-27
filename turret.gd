@@ -1,6 +1,6 @@
 extends Node2D
 
-export var attack_rate = 1.0 # attacks per second
+export (float) var attack_rate = 1.0 # attacks per second
 
 func _ready():
     setup()

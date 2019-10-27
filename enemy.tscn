@@ -19,8 +19,8 @@ centered = false
 region_enabled = true
 region_rect = Rect2( 8, 64, 8, 8 )
 
-[node name="Area2D" type="Area2D" parent="."]
+[node name="Hurtbox" type="Area2D" parent="."]
 position = Vector2( 16, 16 )
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Hurtbox"]
 shape = SubResource( 1 )

@@ -65,6 +65,7 @@ hframes = 4
 
 [node name="Attack" type="Area2D" parent="."]
 position = Vector2( 34, 16 )
+collision_mask = 0
 
 [node name="AttackHitbox" type="CollisionShape2D" parent="Attack"]
 shape = SubResource( 1 )
