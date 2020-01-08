@@ -74,3 +74,10 @@ disabled = true
 [node name="Animator" type="AnimationPlayer" parent="."]
 anims/attack = SubResource( 2 )
 anims/idle = SubResource( 3 )
+
+[node name="AttackRay" type="RayCast2D" parent="."]
+position = Vector2( 12, 17 )
+enabled = true
+cast_to = Vector2( 100, 0 )
+collide_with_areas = true
+collide_with_bodies = false

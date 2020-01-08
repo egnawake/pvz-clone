@@ -8,6 +8,14 @@
 [node name="Turret" parent="." instance=ExtResource( 1 )]
 position = Vector2( 24, 24 )
 
+[node name="Turret2" parent="." instance=ExtResource( 1 )]
+position = Vector2( 26, 86 )
+is_ranged = true
+
 [node name="Enemy" parent="." instance=ExtResource( 2 )]
 position = Vector2( 59.9797, 23.4596 )
+speed = 10.0
+
+[node name="Enemy2" parent="." instance=ExtResource( 2 )]
+position = Vector2( 104.98, 86.4596 )
 speed = 10.0
