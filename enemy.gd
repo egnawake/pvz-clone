@@ -1,14 +1,16 @@
 extends Node2D
 
-export (float) var speed = 1.0
+export var speed = 1.0
 export var max_health = 25
+
+onready var animator = $AnimationPlayer
 
 const direction = Vector2(-1, 0) # left
 var health = max_health
-var can_move = true
+var can_move = false
 
 func _ready():
-    self.can_move = false
+    #self.can_move = false
     $Hurtbox.connect("area_entered", self, "handle_area_entered")
 
 func take_damage(amount):
@@ -16,6 +18,7 @@ func take_damage(amount):
         die()
     else:
         self.health -= amount
+        animator.play("hurt")
 
 func die():
     self.queue_free()

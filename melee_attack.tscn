@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://melee_attack.gd" type="Script" id=1]
+
+[sub_resource type="CircleShape2D" id=1]
+
+[node name="MeleeAttack" type="Node2D"]
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Area" type="Area2D" parent="."]
+collision_mask = 0
+
+[node name="Hitbox" type="CollisionShape2D" parent="Area"]
+shape = SubResource( 1 )
+disabled = true
+
+[node name="DurationTimer" type="Timer" parent="."]
+one_shot = true
