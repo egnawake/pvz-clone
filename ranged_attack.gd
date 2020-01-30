@@ -13,4 +13,3 @@ func attack():
         var ent = ray.get_collider().get_parent()
         if ent.has_method("take_damage"):
             ent.take_damage(damage)
-    
